@@ -1,0 +1,57 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------< com.sahriar:hr-recruitment-and-applicant-tracking-system >------
+[INFO] Building hr-recruitment-and-applicant-tracking-system 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.3.2:clean (default-clean) @ hr-recruitment-and-applicant-tracking-system ---
+[INFO] Deleting C:\Users\tarek\OneDrive\Documents\hr-recruitment-and-applicant-tracking-system\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ hr-recruitment-and-applicant-tracking-system ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ hr-recruitment-and-applicant-tracking-system ---
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 34 source files with javac [debug release 21] to target\classes
+[INFO] Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+[INFO] /C:/Users/tarek/OneDrive/Documents/hr-recruitment-and-applicant-tracking-system/src/main/java/com/sahriar/service/GeminiService.java: C:\Users\tarek\OneDrive\Documents\hr-recruitment-and-applicant-tracking-system\src\main\java\com\sahriar\service\GeminiService.java uses unchecked or unsafe operations.
+[INFO] /C:/Users/tarek/OneDrive/Documents/hr-recruitment-and-applicant-tracking-system/src/main/java/com/sahriar/service/GeminiService.java: Recompile with -Xlint:unchecked for details.
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /C:/Users/tarek/OneDrive/Documents/hr-recruitment-and-applicant-tracking-system/src/main/java/com/sahriar/controller/AIController.java:[29,44] cannot find symbol
+  symbol:   method analyzeResume(java.lang.String)
+  location: variable geminiService of type com.sahriar.service.GeminiService
+[ERROR] /C:/Users/tarek/OneDrive/Documents/hr-recruitment-and-applicant-tracking-system/src/main/java/com/sahriar/controller/AIController.java:[52,37] cannot find symbol
+  symbol:   method chat(java.lang.String,java.lang.String)
+  location: variable geminiService of type com.sahriar.service.GeminiService
+[INFO] 2 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  5.868 s
+[INFO] Finished at: 2025-12-26T15:00:53+06:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.11.0:compile (default-compile) on project hr-recruitment-and-applicant-tracking-system: Compilation failure: Compilation failure: 
+[ERROR] /C:/Users/tarek/OneDrive/Documents/hr-recruitment-and-applicant-tracking-system/src/main/java/com/sahriar/controller/AIController.java:[29,44] cannot find symbol
+[ERROR]   symbol:   method analyzeResume(java.lang.String)
+[ERROR]   location: variable geminiService of type com.sahriar.service.GeminiService
+[ERROR] /C:/Users/tarek/OneDrive/Documents/hr-recruitment-and-applicant-tracking-system/src/main/java/com/sahriar/controller/AIController.java:[52,37] cannot find symbol
+[ERROR]   symbol:   method chat(java.lang.String,java.lang.String)
+[ERROR]   location: variable geminiService of type com.sahriar.service.GeminiService
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
